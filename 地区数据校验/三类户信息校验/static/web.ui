@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="Form">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>936</width>
+                <height>571</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>三类户信息校验 V1.0</string>
+        </property>
+        <property name="styleSheet">
+            <string notr="true">#Form{
+                background-image:url('static/2.jpg');
+                }
+
+                QGroupBox {
+                border:2px solid rgb(255, 170, 127);
+                font-weight:bold;
+                color:red;
+                }
+
+
+                QPushButton{
+                background:#5CB85C;
+                color:white;
+                border-radius:1px;
+                height:30px;
+                width:100%;
+                }
+                QPushButton:hover{
+                background:#449D44;
+
+                }
+            </string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3" stretch="2,8,0">
+            <item>
+                <widget class="QGroupBox" name="groupBox">
+                    <property name="styleSheet">
+                        <string notr="true"/>
+                    </property>
+                    <property name="title">
+                        <string>数据导入</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_2">
+                        <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,8,1">
+                                <item>
+                                    <widget class="QLabel" name="label">
+                                        <property name="text">
+                                            <string>文件选择：</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QTextBrowser" name="textBrowser">
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>16777215</width>
+                                                <height>28</height>
+                                            </size>
+                                        </property>
+                                        <property name="placeholderText">
+                                            <string>请选择文件</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QPushButton" name="pushButton">
+                                        <property name="styleSheet">
+                                            <string notr="true"/>
+                                        </property>
+                                        <property name="text">
+                                            <string>选择</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </item>
+                        <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,8,1">
+                                <item>
+                                    <widget class="QLabel" name="label_2">
+                                        <property name="text">
+                                            <string>导入进度：</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QProgressBar" name="progressBar">
+                                        <property name="value">
+                                            <number>0</number>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QPushButton" name="pushButton_3">
+                                        <property name="text">
+                                            <string>开始导入</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </item>
+                        <item>
+                            <widget class="QTextBrowser" name="textBrowser_2">
+                                <property name="placeholderText">
+                                    <string>导入信息</string>
+                                </property>
+                            </widget>
+                        </item>
+                    </layout>
+                </widget>
+            </item>
+            <item>
+                <widget class="QGroupBox" name="groupBox_2">
+                    <property name="title">
+                        <string>校验区域</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout" stretch="2,8">
+                        <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,8,1">
+                                <item>
+                                    <widget class="QLabel" name="label_3">
+                                        <property name="text">
+                                            <string>校验进度：</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QProgressBar" name="progressBar_2">
+                                        <property name="value">
+                                            <number>0</number>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QPushButton" name="pushButton_2">
+                                        <property name="text">
+                                            <string>开始校验</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </item>
+                        <item>
+                            <widget class="QTextBrowser" name="textBrowser_3">
+                                <property name="styleSheet">
+                                    <string notr="true">#textBrowser_3 {
+                                        font-size:16px;
+                                        }
+                                    </string>
+                                </property>
+                                <property name="placeholderText">
+                                    <string>校验信息</string>
+                                </property>
+                            </widget>
+                        </item>
+                    </layout>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLabel" name="label_4">
+                    <property name="text">
+                        <string>技术支持：喀什市乡村振兴局信息中心林兵</string>
+                    </property>
+                    <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
